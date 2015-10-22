@@ -1,2 +1,2 @@
 # PuppyLove
-CSS project to duplicate site and practice
+CSS practice project to duplicate site exactly.

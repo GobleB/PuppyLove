@@ -1,0 +1,308 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+body {
+	font-family: "Open Sans";
+}
+
+/****************************************
+  Defaults (nothing more than single tag selectors)
+*****************************************/
+
+header {
+	height: 96px;
+	position: relative;
+}
+
+nav {
+	color: white;
+	display: flex;
+	border-top: 1px solid rgba(126, 194, 202, .53);
+	border-bottom: 1px solid rgba(126, 194, 202, .53);
+	padding: 5px 60px 5px 60px;
+	font-size: 12pt;
+}
+
+/****************************************
+  Helpers
+*****************************************/
+
+/****************************************
+  Layout
+*****************************************/
+
+.hero > div {
+	margin: 0 auto;
+	width: 960px;
+	height: 450px;
+	position: relative;
+}
+
+.search {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 260px;
+}
+
+.contentContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	flex: 2;
+}
+
+.feature {
+	flex: 3;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.list>div {
+	height: 80px;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+/****************************************
+  Components
+*****************************************/
+.hero {
+	background: radial-gradient(rgba(0, 130, 147, 0.65) ,#008293), url('../images/bg.jpg');
+	background-size: cover;
+	min-width: 960px;
+}
+
+.logo {
+	color: white;
+	position: absolute;
+	text-decoration: bold;
+	font-size: 40pt;
+	font-family: lobster;
+	left: 3px;
+	top: 2px;
+}
+
+.searchField {
+	border: 1px solid #7EC2CA;
+    color: #7EC2CA;
+    background: transparent;
+}
+
+.searchButton {
+	background-color: #EA501A;
+	color: #FDFBFF;
+	border-radius: 4px;
+    border: none;
+}
+
+nav > div {
+	justify-content: space-around center;
+	padding: 10px;
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+.title {
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	left: 0;
+	color: white;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.title h1 {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 30pt;
+}
+
+.title span {
+	font-weight: 300;
+}
+
+.busCategory {
+	text-align: center;
+	background-color: #FFFFFF;
+	display: inline-block;
+	width: 300px;
+	transform: translate(0px, -20px);
+	box-shadow: 0 0 5px grey;
+	/*height: 174px;*/
+	padding-bottom: 10px;
+}
+
+.busCategory h4 {
+	margin: 10px;
+	padding-top: 5px;
+}
+
+.busCategory button {
+	background-color: transparent;
+	border-radius: 4px;
+}
+
+.raise {
+	border-top: 4px solid #FF4C10;
+}
+
+.feed {
+	border-top: 4px solid #9AD83D;
+}
+
+.sell {
+	border-top: 4px solid #028FD2;
+}
+
+.raise button {
+	border: 2px solid #FF4C10;
+}
+
+.feed button {
+	border: 2px solid #9AD83D;
+}
+
+.sell button {
+	border: 2px solid #028FD2;
+}
+
+.raise a {
+	color: #FF4C10;
+	text-decoration: none;
+}
+
+.feed a {
+	color: #9AD83D;
+	text-decoration: none;
+}
+
+.sell a {
+	color: #028FD2;
+	text-decoration: none;
+}
+
+.contentContainer {
+	box-shadow: 0 0 5px grey;
+}
+
+.primaryContent {
+	background-color: #D7E1E7;
+}
+
+.primaryContent > div {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.primaryContent>div:first-child {
+	height: 174px;
+}
+
+.primaryContent>div:first-child>* + * {
+	margin-left: 11px;
+}
+
+.primaryContent>div:first-child {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.list {
+	background-color: white;
+}
+
+.list>div {
+	background-color: #E8F3F9;
+}
+
+.listContent b {
+	font-weight: 300;
+	font-size: 14pt;
+	color: #0291D3;
+}
+
+.listCotent>div:last-child {
+	padding-bottom: 5px;
+}
+
+.listContent div {
+	padding-left: 7px;
+	padding-bottom: 2px;
+}
+
+.list b {
+	font-size: 16pt;
+}
+
+.list img {
+	flex: 1;
+}
+
+.list>div>div {
+	flex: 4;
+}
+
+.listContent {
+	background-color: #E8F3F9;
+	padding-left: 3px;
+}
+
+.featureName {
+	background-color: #8ECF41;
+	margin: 0px;
+	padding: 0px;
+	padding-right: 10px;
+}
+
+.feature {
+	background-color: white;
+}
+
+.feature>div {
+	width: 160px;
+	vertical-align: inherit;
+	display: inline-block;
+	padding: 0px 10px 10px 0px;
+}
+
+.feature h4 {
+	margin: 0px;
+	padding: 5px;
+	font-weight: 300;
+	color: #477C32;
+}
+
+.feature p {
+	margin: 0px;
+	padding: 5px;
+	padding-right: 10px;
+	background-color: #E3EFD6;
+	color: #656807;
+}
+
+.feature>div>div:first-child {
+	height: 160px;
+	width: 160px;
+}
+
+.feature img {
+	height: 160px;
+	width: 160px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
